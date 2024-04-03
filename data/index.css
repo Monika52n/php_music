@@ -1,0 +1,49 @@
+p {
+    max-width: 50%;
+   
+}
+
+h2 {
+    padding-bottom: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+ul, form {
+    padding-top: 0.1em;
+    margin-top: 0.1em;
+}
+
+.error {
+    color: red;
+    font-size: x-large;
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+
+a {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.25em;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+input, label, select, button {
+    margin-bottom: 0.25em;
+}
+
+html {
+    background-image: url("hatter.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: x-large;
+    text-shadow: -1px 1px 0 white,
+        1px 1px 0 white,
+        1px -1px 0 white,
+        -1px -1px 0 white;
+}
