@@ -2,34 +2,37 @@
 
 The Music Playlist Management Application allows users to create, manage, and explore music playlists. Users can register and log in to access personalized features, including creating their own playlists and adding or removing songs. Admin users have additional capabilities to manage the music database. The application also features a robust search functionality for discovering music.
 
-## Kötelezően teljesítendő (enélkül nem fogadjuk el, 8 pont)
+### Required Features
 
-[X] Egyéb: a "Beadott munka tisztasága" részben szereplő `README.md` állomány hiánytalanul kitöltve szerepel a feltöltött csomagban (0 pont)
-[X] Főoldal: megjelenik az összes publikus lejátszási lista neve (1 pont)
-[X] Főoldal: megjelenik az lejátszási listában található zeneszámok darabszáma és a listát létrehozó felhasználó neve is (1 pont)
-[x] Főoldal: egy lejátszási listára kattintva megjelenik az adott lejátszási lista részletező oldala (1 pont)
-[X] Főoldal: a főoldalon egy keresőmezőbe írva megjelennek azok a számok, amelyek címe tartalmazza a beírt keresési szöveget (2 pont)
-[X] Részletező oldal: egy lejátszási listára megjelennek a benne lévő zeneszámok adatai (2 pont)
-[X] Részletező oldal: a részletező oldal tetején látható, hogy mennyi a lejátszási lista teljes játékideje, vagyis a benne lévő számok hosszának összege (1 pont)
+1. **Home Page**
+   - Displays the names of all public playlists, allowing users to browse through available collections.
+   - Shows the number of songs in each playlist along with the name of the user who created it, providing context and attribution.
+   - Allows users to click on a playlist to view its detailed contents.
+   - Features a search box that filters and displays songs based on the entered search text, making it easy to find specific tracks.
 
-## Az alap feladatok (12 pont)
+2. **Details Page**
+   - Provides detailed information about the songs in a selected playlist, including title, artist, and duration.
+   - Displays the total playtime of the playlist, summarizing the length of all included tracks.
+   - 
+### Basic Features
 
-[X] Bejelentkezés: hibás esetek kezelése (1 pont)
-[X] Bejelentkezés: sikeres bejelentkezés (1 pont)
-[X] Regisztrációs űrlap: megfelelő elemeket tartalmazza (név, e-mail, jelszó, jelszó mégegyszer) (0,5 pont)
-[X] Regisztrációs űrlap: hibás esetek kezelése, hibaüzenet, állapottartás (1,5 pont)
-[x] Regisztrációs űrlap: sikeres regisztráció (0,5 pont)
-[X] Saját listák: a bejelentkezett felhasználó létre tud hozni saját lejátszási listát (1 pont)
-[X] Saját listák: a bejelentkezett felhasználó hozzáadhat zeneszámokat a saját listáihoz (1 pont)
-[X] Saját listák: a bejelentkezett felhasználó eltávolíthat zeneszámokat a saját listáiból (1 pont)
-[X] Saját listák: a létrehozott lista lehet publikus vagy rejtett is, és ez megfelelően működik a listázásnál (1 pont)
-[X] Admin funkció: be lehet jelentkezni az admin felhasználó adataival (0,5 pont)
-[X] Admin funkció: az admin (és CSAK az admin) létrehozhat új zeneszámokat (1 pont)
-[X] Admin funkció: az admin (és CSAK az admin) módosíthat zeneszámokat (1 pont)
-[X] Admin funkció: az admin (és CSAK az admin) törölhet zeneszámokat (1 pont)
-[ ] **Késés: -0,5 pont / megkezdett nap!**
+1. **Login**
+   - Handles error cases gracefully, providing feedback for incorrect login attempts.
+   - Supports successful login, enabling users to access personalized features.
 
-## Plusz feladatok (plusz 5 pont)
+2. **Registration Form**
+   - Includes fields for name, email, password, and password confirmation to ensure comprehensive user information.
+   - Manages errors with clear messages and state management to guide users through the registration process.
+   - Confirms successful registration, allowing new users to join the platform.
 
-[ ] Paraméteres kereső: a zeneszámokat az adatok alapján is meg lehet találni többféle szűrővel (pl. cím, szerző, hossz intervallum, év intervallum, műfajok) (3 pont)
-[ ] Paraméteres kereső: a keresés eredményei az oldal újratöltése nélkül AJAX / fetch technológiával frissülnek (2 pont)
+3. **User Playlists**
+   - Enables logged-in users to create their own playlists, fostering personalized music collections.
+   - Allows users to add songs to their playlists, enhancing their music experience.
+   - Provides options to remove songs from their playlists, giving users control over their collections.
+   - Supports both public and hidden playlists, with accurate reflections in the listing based on privacy settings.
+
+4. **Admin Functions**
+   - Facilitates admin login for accessing advanced features.
+   - Grants admin users the ability to create new songs, expanding the platform's music library.
+   - Allows admins to modify song details, ensuring the accuracy and relevance of the content.
+   - Permits admins to delete songs, maintaining the quality and integrity of the music collection.
